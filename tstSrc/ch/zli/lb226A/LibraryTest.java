@@ -3,7 +3,7 @@ package ch.zli.lb226A;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
-public class libraryTest {
+public class LibraryTest {
 
     @Test
     public void addUserTest(){
