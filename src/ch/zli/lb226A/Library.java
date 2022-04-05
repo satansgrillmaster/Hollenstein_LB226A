@@ -36,13 +36,13 @@ public class Library {
      * Check if the user is registered in the library, if successfully, return. Else throw a Security Exception
      * @param userName the users name for the security check
      */
-    public void checkUserSecurity(String userName){
+    public boolean checkUserSecurity(String userName){
         for (User user : users){
             if (user.getUserName() == userName){
-                return;
+                return true;
             }
-            throw new SecurityException();
         }
+        throw new SecurityException();
     }
 
     /**
