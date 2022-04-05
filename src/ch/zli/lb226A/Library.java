@@ -59,4 +59,18 @@ public class Library {
         return null;
     }
 
+    /**
+     * Help function for library test
+     * @param userName name of the user to test
+     * @return true if the user exist in the library
+     */
+    public boolean getUserNameForTest(String userName){
+        for (User user : users){
+            if (user.getUserName() == userName ){
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

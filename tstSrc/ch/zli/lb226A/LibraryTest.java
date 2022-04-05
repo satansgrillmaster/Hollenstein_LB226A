@@ -9,6 +9,7 @@ public class LibraryTest {
     public void addUserTest(){
         Library library = new Library();
         library.addUser("testuser");
+        assertTrue(library.getUserNameForTest("testuser"));
     }
 
     @Test
